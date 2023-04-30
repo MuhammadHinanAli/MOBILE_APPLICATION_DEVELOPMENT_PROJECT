@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>cinema</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">CINEMA</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <h2>BOOK TICKET AT YOUR FAVOURITE CINEMA:</h2>
+  <br>  <!-- SPACE OF A LINE -->
+  <h5>ODEON CINEMA:</h5>
+  <ion-button (click)="getBrowser()">ODEON</ion-button>  <!--PORPERTY BINDING// BUTTON, FUNCTION ASSIGNED WHEN CLICKED, ASSIGNED IN .ts-->
+  <br>  <!-- SPACE OF A LINE -->
+  <br>  <!-- SPACE OF A LINE -->
+  <h5>CINEWORLD CINEMA:</h5>
+  <ion-button (click)="getBrowser1()">CINEWORLD</ion-button> <!--PORPERTY BINDING// BUTTON, FUNCTION ASSIGNED WHEN CLICKED, ASSIGNED IN .ts-->
+  <br>  <!-- SPACE OF A LINE -->
+  <br>  <!-- SPACE OF A LINE -->
+  <h5>OMNIPLEX CINEMA:</h5>
+  <ion-button (click)="getBrowser2()">OMNIPLEX</ion-button> <!--PORPERTY BINDING// BUTTON, FUNCTION ASSIGNED WHEN CLICKED, ASSIGNED IN .ts-->
+  <br>  <!-- SPACE OF A LINE -->
+  <br>  <!-- SPACE OF A LINE -->
+  <h5>VUE CINEMA:</h5>
+  <ion-button (click)="getBrowser3()">VUE</ion-button> <!--PORPERTY BINDING// BUTTON, FUNCTION ASSIGNED WHEN CLICKED, ASSIGNED IN .ts-->
+  <br>  <!-- SPACE OF A LINE -->
+  <br>  <!-- SPACE OF A LINE -->
+  <h5>EYE CINEMA:</h5>
+  <ion-button (click)="getBrowser4()">EYE</ion-button> <!--PORPERTY BINDING // BUTTON, FUNCTION ASSIGNED WHEN CLICKED, ASSIGNED IN .ts-->
+  <br>  <!-- SPACE OF A LINE -->
+  <br>  <!-- SPACE OF A LINE -->
+  <h5>IMC CINEMA:</h5>
+  <ion-button (click)="getBrowser5()">IMC</ion-button> <!--PORPERTY BINDING// BUTTON, FUNCTION ASSIGNED WHEN CLICKED, ASSIGNED IN .ts-->
+  <br>  <!-- SPACE OF A LINE -->
+  <br>  <!-- SPACE OF A LINE -->
+  <br>  <!-- SPACE OF A LINE -->
+  <br>  <!-- SPACE OF A LINE -->
+
+  <ion-button [routerLink]="['/lists']">MOVIES LIST</ion-button>      <!-- LINKS/NAVIGATES TO ANOTHER PAGE -->
+  <ion-button [routerLink]="['/genre']">GENRE</ion-button>            <!-- LINKS/NAVIGATES TO ANOTHER PAGE -->
+  <ion-button [routerLink]="['/location']">LOCATION</ion-button>      <!-- LINKS/NAVIGATES TO ANOTHER PAGE -->
+  <ion-button [routerLink]="['/home']">HOME</ion-button>              <!-- LINKS/NAVIGATES TO ANOTHER PAGE -->
+
+</ion-content>

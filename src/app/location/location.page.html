@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>LOCATION</ion-title> <!-- TITLE -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">LOCATION</ion-title> <!-- TITLE -->
+    </ion-toolbar>
+  </ion-header>
+
+  <h2>PRESS THE LOCATION FOR NEARYBY CINEMAS:</h2>
+  <ion-button (click)="getLocation()">LOCATION</ion-button>  <!--PORPERTY BINDING BUTTON CALLED LOCATION, FUNCTION ASSIGNED WHEN CLICKED, ASSIGNED IN .ts-->
+  <h3>LONGITUDE: {{longitude}}</h3>  <!--DATA BINDING-->
+  <h3>LATITUDE: {{latitude}}</h3> <!--DATA BINDING-->
+  <h3>TIME: {{time}}</h3>         <!--DATA BINDING-->
+  <h3>NEARBY CINEMA: NULL</h3>
+  <br> <!--SPACE OF A LINE-->
+  <h2>PRESS BROWSER TO SEARCH NEW MOVIES:</h2>
+  <ion-button (click)="getBrowser()">BROWSER</ion-button> <!-- PROPERTY BINDING //BUTTON CALLED BROWERS, FUNCTION ASSIGNED WHEN CLICKED, OPENS A URL ASSIGNED IN .ts-->
+  <br> <!--SPACE OF A LINE-->
+  <br> <!--SPACE OF A LINE-->
+  <br> <!--SPACE OF A LINE-->
+  <br> <!--SPACE OF A LINE-->
+  <ion-button [routerLink]="['/lists']">MOVIES LIST</ion-button> <!-- LINKS/NAVIGATES TO ANOTHER PAGE -->
+  <ion-button [routerLink]="['/genre']">Genre</ion-button>       <!-- LINKS/NAVIGATES TO ANOTHER PAGE -->
+  <ion-button [routerLink]="['/cinema']">BOOK NOW</ion-button>   <!-- LINKS/NAVIGATES TO ANOTHER PAGE -->
+  <ion-button [routerLink]="['/home']">HOME</ion-button>         <!-- LINKS/NAVIGATES TO ANOTHER PAGE -->  
+</ion-content>

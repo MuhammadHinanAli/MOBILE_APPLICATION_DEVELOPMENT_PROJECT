@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>MOVIES LIST</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">MOVIES LIST</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div>
+    <h3>LIST OF FAMOUS MOVIES:</h3>
+    <br> <!-- SPACE OF A LINE --> 
+    <ion-card *ngFor="let movie of movieData">    <!-- FOR LOOP TO RUN THE ARRAY --> 
+     <img alt="Movie Poster" src={{movie.Poster}} /> <!-- DATA BINDING --> 
+     <ion-card-header>
+       <ion-card-title>{{movie.Title}}</ion-card-title>    <!-- DATA BINDING --> 
+       <ion-card-subtitle>{{movie.Year}}</ion-card-subtitle>  <!-- DATA BINDING --> 
+     </ion-card-header>
+   </ion-card>
+  </div>
+
+  <ion-button [routerLink]="['/genre']">GENRE</ion-button>          <!-- LINKS/NAVIGATES TO ANOTHER PAGE --> 
+  <ion-button [routerLink]="['/location']">LOCATION</ion-button>    <!-- LINKS/NAVIGATES TO ANOTHER PAGE --> 
+  <ion-button [routerLink]="['/cinema']">BOOK NOW</ion-button>      <!-- LINKS/NAVIGATES TO ANOTHER PAGE --> 
+  <ion-button [routerLink]="['/home']">HOME</ion-button>            <!-- LINKS/NAVIGATES TO ANOTHER PAGE --> 
+</ion-content>

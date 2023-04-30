@@ -1,0 +1,64 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>GENRES</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">GENRES</ion-title> <!-- TITLE --> 
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>  <!-- IONIC LIST USED TO DISPLAY DIFFERENT OPTIONS --> 
+    <ion-radio-group [(ngModel)]="myGenre">  <!-- IONIC FUNCTION --> 
+    <ion-item>
+      <ion-label>ACTION</ion-label>
+      <ion-radio value="ACTION"></ion-radio> <!-- STORES VALUE IN THE VARIABLE CALLED myGenre -->
+    </ion-item>
+    <ion-item>
+      <ion-label>ADVENTURE</ion-label>
+      <ion-radio value="ADVENTURE"></ion-radio> <!-- STORES VALUE IN THE VARIABLE CALLED myGenre -->
+    </ion-item>
+    <ion-item>
+      <ion-label>COMEDY</ion-label>
+      <ion-radio value="COMEDY"></ion-radio> <!-- STORES VALUE IN THE VARIABLE CALLED myGenre -->
+    </ion-item>
+    <ion-item>
+      <ion-label>DRAMA</ion-label>
+      <ion-radio value="DRAMA"></ion-radio> <!-- STORES VALUE IN THE VARIABLE CALLED myGenre -->
+    </ion-item>
+    <ion-item>
+      <ion-label>FANTASY</ion-label>
+      <ion-radio value="FANTASY"></ion-radio> <!-- STORES VALUE IN THE VARIABLE CALLED myGenre -->
+    </ion-item>
+    <ion-item>
+      <ion-label>HORROR</ion-label>
+      <ion-radio value="HORROR"></ion-radio> <!-- STORES VALUE IN THE VARIABLE CALLED myGenre -->
+    </ion-item>
+    <ion-item>
+      <ion-label>ROMANCE</ion-label>
+      <ion-radio value="ROMANCE"></ion-radio> <!-- STORES VALUE IN THE VARIABLE CALLED myGenre -->
+    </ion-item>
+    <ion-item>
+      <ion-label>SCIENCE FICTION</ion-label>
+      <ion-radio value="SCIENCE FICTION"></ion-radio> <!-- STORES VALUE IN THE VARIABLE CALLED myGenre -->
+    </ion-item>
+    <ion-item>
+      <ion-label>THRILLER</ion-label>
+      <ion-radio value="THRILLER"></ion-radio> <!-- STORES VALUE IN THE VARIABLE CALLED myGenre -->
+    </ion-item>
+    <ion-item>
+      <ion-label>MYSTERY</ion-label>
+      <ion-radio value="MYSTERY"></ion-radio> <!-- STORES VALUE IN THE VARIABLE CALLED myGenre -->
+    </ion-item>
+    <ion-item>
+      <ion-label>WESTERN</ion-label>
+      <ion-radio value="WESTERN"></ion-radio> <!-- STORES VALUE IN THE VARIABLE CALLED myGenre -->
+    </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+  <ion-button (click)="onSave()">Save</ion-button> <!-- PROPERTY BINDING // FUNCTION WHICH SAVES THE VALUE --> 
+</ion-content>

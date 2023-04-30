@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      MOVIE APP
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,11 +9,26 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">MOVIE APP</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
- <h3>Welcome to Mobile Apps Starter project 2023</h3>
+    <h2>WELCOME TO THE MOVIE APP</h2>  <!-- TITLE --> 
+    <br>
+    <p>LIST OF FAMOUS MOVIES:</p>
+    <ion-button [routerLink]="['/lists']">MOVIES LIST</ion-button> <!-- NAVIGATES TO A PAGE // PROPERTY BINDING --> 
+    <br>
+    <br>
+    <p>THE GENRE SELECTED: {{myGenre}}</p> <!-- DATA BIDDING -->
+    <ion-button [routerLink]="['/genre']">GENRES</ion-button> <!-- NAVIGATES TO A PAGE // PROPERTY BINDING --> 
+    <br>
+    <br>
+    <p>SEARCH NEARBY CINEMA AND NEW MOVIES:</p>
+    <ion-button [routerLink]="['/location']">LOCATION</ion-button> <!-- NAVIGATES TO A PAGE // PROPERTY BINDING --> 
+    <br>
+    <br>
+    <p>BOOK YOUR TICKETS AT YOUR FAVOURITE CINEMA NOW:</p>
+    <ion-button [routerLink]="['/cinema']">BOOK NOW</ion-button> <!-- NAVIGATES TO A PAGE // PROPERTY BINDING --> 
   </div>
 </ion-content>

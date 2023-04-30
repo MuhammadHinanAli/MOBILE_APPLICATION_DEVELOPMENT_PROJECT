@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Storage} from '@ionic/storage-angular'; //IMPORT FOR STORAGE
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-stories:any[]=[];
-  constructor() {}
+  myGenre:any ="";
+  constructor(private storage:Storage) {}
   
+  async ionViewWillEnter(){
+    await this.storage.create();
+    this.myGenre = await this.storage.get('genre');
+  }
 }
